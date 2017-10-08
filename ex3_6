@@ -1,0 +1,19 @@
+#include <iostream.h>
+#include <iomanip.h>
+void main()
+{
+	float r,s,c,pi;
+	int k;
+	cout<<"Please enter the value of r and k:"<<endl;
+	cin>>r>>k;
+	pi=3.1415926;
+	s=pi*r*r;
+	c=2*pi*r;
+	switch(k)
+	{
+	case 1:cout<<setiosflags(ios::fixed)<<setprecision(4)<<"s="<<setw(8)<<s<<endl;break;
+	case 2:cout<<setiosflags(ios::fixed)<<setprecision(4)<<"c="<<setw(8)<<c<<endl;break;
+	default:cout<<setiosflags(ios::fixed)<<setprecision(4)<<"s="<<setw(8)<<s
+     <<","<<setiosflags(ios::fixed)<<setprecision(4)<<"c="<<setw(8)<<c<<endl;
+	}
+}
